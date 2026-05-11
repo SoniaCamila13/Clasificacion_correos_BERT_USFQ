@@ -50,8 +50,7 @@ Predicción de categoría
 ## Resultados
 F1-score: 0.96
 
-
-# Dataset
+## Dataset
 
 El dataset utilizado en este proyecto fue construido a partir de correos electrónicos reales extraídos del buzón institucional del área de Registro de la Universidad San Francisco de Quito (USFQ).
 
@@ -94,10 +93,9 @@ El modelo fue entrenado para clasificar correos electrónicos en las siguientes 
 
 ## Ejecución del Proyecto
 
-# 1. Clonar el repositorio
+## 1. Clonar el repositorio
 
-1. ```bash
-git clone https://github.com/SoniaCamila13/Clasificacion_correos_BERT_USFQ.git
+1.git clone https://github.com/SoniaCamila13/Clasificacion_correos_BERT_USFQ.git
 2. cd Clasificacion_correos_BERT_USFQ
 3. pip install -r requirements.txt
 4. Ejecutar notebooks
@@ -133,8 +131,15 @@ Clasificacion_correos_BERT_USFQ/
 │
 ├── README.md
 └── requirements.txt
+```
+# Descripción de carpetas
+| Carpeta      | Contenido                               |
+| ------------ | --------------------------------------- |
+| `data/`      | Información y documentación del dataset |
+| `docs/`      | Documentación adicional y anexos        |
+| `notebooks/` | Desarrollo experimental y entrenamiento |
+| `results/`   | Resultados, métricas y gráficas         |
+| `scripts/`   | Scripts ejecutables del prototipo       |
 
-
-
-## Autor
+# Autor
 Camila Cruz
