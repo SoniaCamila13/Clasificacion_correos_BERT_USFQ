@@ -47,6 +47,38 @@ Predicción de categoría
 
 5. Predicción: Clasificación automática de nuevos correos electrónicos.
 
+## Resultados
+F1-score: 0.96
+
+## Dataset
+# 📊 Dataset
+
+El dataset utilizado en este proyecto fue construido a partir de correos electrónicos reales extraídos del buzón institucional del área de Registro de la Universidad San Francisco de Quito (USFQ).
+
+Los datos corresponden a solicitudes administrativas reales recibidas durante aproximadamente un año de operación institucional.
+
+## Procesamiento del dataset
+
+El conjunto de datos fue sometido a múltiples procesos de depuración y preparación, incluyendo:
+
+- Limpieza de texto
+- Eliminación de ruido y correos irrelevantes
+- Filtrado de respuestas automáticas
+- Normalización de contenido
+- Anonimización de información sensible mediante técnicas NER utilizando SpaCy
+
+El dataset final utilizado para entrenamiento estuvo compuesto por aproximadamente 25,400 correos electrónicos anonimizados.
+Por motivos de privacidad y confidencialidad institucional, el dataset original no se encuentra disponible públicamente.
+
+## Categorías de clasificación
+
+El modelo fue entrenado para clasificar correos electrónicos en las siguientes categorías:
+
+- Certificados
+- Registro y Retiro de Materias
+- Proceso de Graduación
+- Otros Trámites
+
 ## Tecnologías
 | Tecnología       | Descripción                |
 | ---------------- | -------------------------- |
@@ -60,9 +92,61 @@ Predicción de categoría
 | Matplotlib       | Visualización              |
 | Jupyter Notebook | Desarrollo experimental    |
 
+## Ejecución del Proyecto
 
-## Resultados
-F1-score: 0.96
+## 1. Clonar el repositorio
+
+1. ```bash
+git clone https://github.com/SoniaCamila13/Clasificacion_correos_BERT_USFQ.git
+2. cd Clasificacion_correos_BERT_USFQ
+3. pip install -r requirements.txt
+4. Ejecutar notebooks
+5. Ejecutar predicción
+python scripts/predict.py
+
+Los notebooks pueden abrirse y ejecutarse utilizando:
+-Jupyter Notebook
+-Google Colab
+
+El script permite ingresar texto manualmente y ejecutar una predicción utilizando el pipeline de clasificación.
+
+## Estructura del Repositorio
+
+---
+
+# 📂 Estructura del Repositorio
+```plaintext
+Clasificacion_correos_BERT_USFQ/
+│
+├── data/
+│   └── README_dataset.md
+│
+├── docs/
+│
+├── notebooks/
+│   ├── 01_preprocesamiento_y_anonimizacion.ipynb
+│   ├── 02_modelo_baseline.ipynb
+│   ├── 03_entrenamiento_BERT.ipynb
+│   ├── 04_experimentacion_y_tuning.ipynb
+│   └── 05_evaluacion_final.ipynb
+│
+├── results/
+│
+├── scripts/
+│   └── predict.py
+│
+├── README.md
+└── requirements.txt
+
+## Descripción de Carpetas
+| Carpeta      | Contenido                               |
+| ------------ | --------------------------------------- |
+| `data/`      | Información y documentación del dataset |
+| `docs/`      | Documentación adicional y anexos        |
+| `notebooks/` | Desarrollo experimental y entrenamiento |
+| `results/`   | Resultados, métricas y gráficas         |
+| `scripts/`   | Scripts ejecutables del prototipo       |
+
 
 ## Autor
 Camila Cruz
