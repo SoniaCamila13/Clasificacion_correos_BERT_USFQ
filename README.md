@@ -110,10 +110,6 @@ Los notebooks pueden abrirse y ejecutarse utilizando:
 
 El script permite ingresar texto manualmente y ejecutar una predicción utilizando el pipeline de clasificación.
 
-## Estructura del Repositorio
-
----
-
 # 📂 Estructura del Repositorio
 ```plaintext
 Clasificacion_correos_BERT_USFQ/
@@ -139,6 +135,7 @@ Clasificacion_correos_BERT_USFQ/
 └── requirements.txt
 
 ## Descripción de Carpetas
+
 | Carpeta      | Contenido                               |
 | ------------ | --------------------------------------- |
 | `data/`      | Información y documentación del dataset |
